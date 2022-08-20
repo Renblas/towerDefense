@@ -6,7 +6,7 @@ const UPS_TARGET = 120;
 const UPS_perFrameNum = UPS_TARGET / FPS_TARGET;
 const RUNNING_IN_APP = !(typeof window.AppInventor === "undefined");
 
-let gameState = "loading";
+let gameState = "hi";
 let gamePaused = false;
 
 let textConst;
@@ -21,13 +21,19 @@ function setup() {
     }
 
     frameRate(FPS_TARGET);
-    textConst = height / 720;
+    textConst = height / 1000;
 
 }
 
 // Draw
 function draw() {
     background(255)
+
+    if (loadedBool === false) {
+        LoadingMenu()
+        return;
+    }
+
     // Check if in Current Game 
     if (gameState === "game") {
         if (gamePaused === false) {
@@ -46,9 +52,7 @@ function draw() {
         MainMenu()
     }
 
-    if (gameState === "loading") {
-        LoadingMenu()
-    }
+
 
 
 }

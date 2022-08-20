@@ -17,6 +17,7 @@ function MainMenu() {
 
     mainMenu_startButton.draw()
     mainMenu_aboutButton.draw()
+    mainMenu_settingsButton.draw()
 }
 
 function MainMenu_Create() {
@@ -48,9 +49,10 @@ function MainMenu_Create() {
     mainMenu_aboutButton.textScaled = false;       //Whether to scale the text with the clickable (boolean)
 
     mainMenu_settingsButton = new Clickable();
-    mainMenu_settingsButton.locate(100, 200);
-    mainMenu_settingsButton.resize(250, 100);
-    mainMenu_settingsButton.color = "#FFFFFF";       //Background color of the clickable (hex number as a string)
+    mainMenu_settingsButton.resize(150 * textConst, 150 * textConst);
+    mainMenu_settingsButton.locate(width - mainMenu_settingsButton.width - 1,
+        height - mainMenu_settingsButton.height - 1);
+    mainMenu_settingsButton.color = "#777777";       //Background color of the clickable (hex number as a string)
     mainMenu_settingsButton.cornerRadius = 10;       //Corner radius of the clickable (float)
     mainMenu_settingsButton.strokeWeight = 2;        //Stroke width of the clickable (float)
     mainMenu_settingsButton.stroke = "#000000";      //Border color of the clickable (hex number as a string)
