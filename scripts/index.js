@@ -19,10 +19,12 @@ function setup() {
     }
 
     frameRate(FPS_TARGET);
+
 }
 
 // Draw
 function draw() {
+    background(255)
     // Check if in Current Game 
     if (gameState === "game") {
         if (gamePaused === false) {
@@ -38,7 +40,11 @@ function draw() {
 
     // Main Menu
     if (gameState === "mainMenu") {
-        background(155)
+        MainMenu()
+    }
+
+    if (gameState === "loading") {
+        loadingMenu()
     }
 
 
