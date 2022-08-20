@@ -1,8 +1,9 @@
 
 // Variables
 
+let mainMenuCreated
 
 // Draw Main Menu
 function MainMenu() {
-    background(0)
+    background(180)
 }

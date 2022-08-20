@@ -4,6 +4,7 @@ const LOAD_ASSET_ARRAY = [
     "scripts/game.js",
     "scripts/menu/mainMenu.js",
     "scripts/menu/pauseMenu.js",
+    "scripts/library/p5.sound.min.js"
 ]
 
 // Variables
