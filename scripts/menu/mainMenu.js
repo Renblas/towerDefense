@@ -43,6 +43,10 @@ function MainMenu_Create() {
     mainMenu_startButton.textSize = 70 * textConst;           //Size of the text (integer)
     mainMenu_startButton.textFont = machineGunkFont; //Font of the text (string)
     mainMenu_startButton.textScaled = true;       //Whether to scale the text with the clickable (boolean)
+    mainMenu_startButton.onPress = function () {
+        GameSetup()
+        gameState = "game";
+    }
 
     mainMenu_aboutButton = new Clickable();
     mainMenu_aboutButton.resize(400 * textConst, 100 * textConst);

@@ -53,9 +53,9 @@ function draw() {
             for (let i = 0; i < UPS_perFrameNum; i++) {
                 GameUpdate()
             }
-            DrawGame()
+            GameDraw()
         } else {
-            DrawGame()
+            GameDraw()
             PauseMenu()
         }
     }
