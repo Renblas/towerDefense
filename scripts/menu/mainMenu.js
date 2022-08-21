@@ -17,8 +17,10 @@ function MainMenu() {
     background(180)
 
     textSize(225 * textConst)
-    text("Cyborg", width * 0.5, height * 0.25)
-    textSize(75 * textConst)
+    textFont(roboticFont)
+    text("Cyborg", width * 0.5, height * 0.175)
+    textFont(machineGunkFont)
+    textSize(100 * textConst)
     text("Tower Defense", width * 0.5, height * 0.45)
 
     mainMenu_startButton.draw()
@@ -38,8 +40,8 @@ function MainMenu_Create() {
     mainMenu_startButton.stroke = "#000000";      //Border color of the clickable (hex number as a string)
     mainMenu_startButton.text = "Start Game";       //Text of the clickable (string)
     mainMenu_startButton.textColor = "#000000";   //Color of the text (hex number as a string)
-    mainMenu_startButton.textSize = 50 * textConst;           //Size of the text (integer)
-    mainMenu_startButton.textFont = "sans-serif"; //Font of the text (string)
+    mainMenu_startButton.textSize = 70 * textConst;           //Size of the text (integer)
+    mainMenu_startButton.textFont = machineGunkFont; //Font of the text (string)
     mainMenu_startButton.textScaled = true;       //Whether to scale the text with the clickable (boolean)
 
     mainMenu_aboutButton = new Clickable();
@@ -52,8 +54,8 @@ function MainMenu_Create() {
     mainMenu_aboutButton.stroke = "#000000";      //Border color of the clickable (hex number as a string)
     mainMenu_aboutButton.text = "About";       //Text of the clickable (string)
     mainMenu_aboutButton.textColor = "#000000";   //Color of the text (hex number as a string)
-    mainMenu_aboutButton.textSize = 50 * textConst;           //Size of the text (integer)
-    mainMenu_aboutButton.textFont = "sans-serif"; //Font of the text (string)
+    mainMenu_aboutButton.textSize = 70 * textConst;           //Size of the text (integer)
+    mainMenu_aboutButton.textFont = machineGunkFont; //Font of the text (string)
     mainMenu_aboutButton.textScaled = false;       //Whether to scale the text with the clickable (boolean)
 
     mainMenu_settingsButton = new Clickable();
