@@ -73,7 +73,6 @@ function LoadAssets(assetString) {
         document.body.appendChild(script);
     } else if (splitLast === "png") {
         loadingImgArray[0] = splitName[splitName.length - 2]
-        print("hi")
         loadImage(assetString, img => {
             loadingImgArray[1] = img;
             ImageArray.push(loadingImgArray)
