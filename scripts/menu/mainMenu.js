@@ -44,7 +44,8 @@ function MainMenu_Create() {
     mainMenu_startButton.textFont = machineGunkFont; //Font of the text (string)
     mainMenu_startButton.textScaled = true;       //Whether to scale the text with the clickable (boolean)
     mainMenu_startButton.onPress = function () {
-        GameSetup()
+        print("starting game...");
+        GameSetup();
         gameState = "game";
     }
 
