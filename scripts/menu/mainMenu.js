@@ -58,7 +58,7 @@ function MainMenu_Create() {
     mainMenu_settingsButton.stroke = "#000000";      //Border color of the clickable (hex number as a string)
     mainMenu_settingsButton.image = getImage("settingsIcon"); // myImage is an image loaded from p5's loadImage()
     mainMenu_settingsButton.fitImage = true; // fits the image inside the button with the image's original aspect ratio
-    mainMenu_settingsButton.imageScale = 1.0; // useful if your image has some extra transparent padding
+    mainMenu_settingsButton.imageScale = 0.75; // useful if your image has some extra transparent padding
 
 
 }

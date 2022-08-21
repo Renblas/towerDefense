@@ -38,7 +38,7 @@ function LoadingMenu() {
     // if finished all assets, end loading stage
     if (loadAssetIndex == LOAD_ASSET_ARRAY.length - 1) {
         loadedBool = true;
-        gameState = "hi";
+        gameState = "mainMenu";
         return;
     }
 
@@ -74,15 +74,14 @@ function LoadAssets(assetString) {
     } else if (splitLast === "png") {
         loadingImgArray[0] = splitName[splitName.length - 2]
         print("hi")
-        toDataURL(
-            "images/icons/settingsIcon.png",
-            function (dataUrl) {
-                console.log('RESULT:', dataUrl)
-                loadAssetIndex += 1;
-                loadingBool = false;
-            },
-            "image/png"
-        )
+        loadImage(assetString, img => {
+            loadingImgArray[1] = img;
+            ImageArray.push(loadingImgArray)
+            loadingImgArray = [];
+
+            loadAssetIndex += 1;
+            loadingBool = false;
+        })
 
 
 

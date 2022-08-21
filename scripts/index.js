@@ -6,7 +6,7 @@ const UPS_TARGET = 120;
 const UPS_perFrameNum = UPS_TARGET / FPS_TARGET;
 const RUNNING_IN_APP = !(typeof window.AppInventor === "undefined");
 
-let gameState = "hi";
+let gameState = "";
 let gamePaused = false;
 
 let textConst;
