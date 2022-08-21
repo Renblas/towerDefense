@@ -2,16 +2,17 @@
 // Load Assets Array
 const LOAD_ASSET_ARRAY = [
     //"scripts/library/p5.sound.min.js",
-    "scripts/library/p5.clickable.min.js",
+    "scripts/library/p5.clickable.js",
     "scripts/library/p5.collide2d.min.js",
 
     "scripts/game.js",
     "scripts/image.js",
 
+    "images/icons/settingsIcon.png",
+
     "scripts/menu/mainMenu.js",
     "scripts/menu/pauseMenu.js",
 
-    "images/icons/settingsIcon.png"
 ]
 
 // Variables
